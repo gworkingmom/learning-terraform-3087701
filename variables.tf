@@ -33,7 +33,7 @@ variable "asg_min_size" {
   default = 1
 }
 
-variable "asg_maz_size" {
+variable "asg_max_size" {
   description = "maximum number of instances in the ASG"
   default = 2
 }

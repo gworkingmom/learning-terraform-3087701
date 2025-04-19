@@ -4,7 +4,7 @@ variable "instance_type" {
 }
 
 variable "ami_filter" {
-    description "name filter and owner for ami"
+    description = "name filter and owner for ami"
     type = object({
       name = string
       owner = string
@@ -14,10 +14,6 @@ variable "ami_filter" {
       name = "bitnami-tomcat-*-x86_64-hvm-ebs-nami"
       owner = "979382823631" # Bitnami
     }
-}
-
-data "aws_vpc" "default" {
-  default = true
 }
 
 variable "environment" {
